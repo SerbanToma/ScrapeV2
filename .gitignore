@@ -1,0 +1,103 @@
+# Root level gitignore for Scrapelight project
+
+# Environment files with sensitive data
+.env
+.env.local
+.env.production
+.env.staging
+*.env
+
+# Docker compose overrides (may contain sensitive data)
+docker-compose.override.yml
+docker-compose.prod.yml
+docker-compose.staging.yml
+docker-compose.dev.yml
+
+# JWT secrets and authentication keys
+JWT_SECRET_KEY
+jwt_secret*
+*.jwt
+*.token
+
+# Database connection strings and URLs
+DATABASE_URL
+REDIS_URL
+
+# API keys and secrets
+API_KEY*
+SECRET_KEY*
+OPENAI_API_KEY
+GOOGLE_API_KEY
+
+# SSL certificates and keys
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+ssl/
+certs/
+
+# Production configurations
+config.production.*
+settings.production.*
+
+# Backup files
+*.backup
+*.bak
+backup/
+backups/
+
+# Documentation with sensitive info
+DEPLOYMENT.md
+PRODUCTION_SETUP.md
+API_KEYS.md
+
+# IDE and editor specific
+.idea/
+.vscode/settings.json
+.vscode/launch.json
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+log/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Node dependencies (in case of root level node_modules)
+node_modules/
+
+# Python cache (in case of root level Python files)
+__pycache__/
+*.pyc
+
+# Docker volumes and data
+docker-data/
+postgres-data/
+redis-data/
+
+# CI/CD secrets
+.github/secrets/
+.gitlab-ci-secrets/
+ci-secrets/
+
+# Monitoring and analytics keys
+SENTRY_DSN
+ANALYTICS_KEY
+MONITORING_TOKEN
+
+
+
+
