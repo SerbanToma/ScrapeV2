@@ -1,0 +1,75 @@
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+*.tgz
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor/OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Coverage / test output
+coverage/
+.nyc_output/
+
+# Vite cache / local overrides
+vite.config.local.*
+*.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Lint cache
+.eslintcache
+
+# Authentication & Security
+# JWT tokens and auth keys (in case accidentally saved to files)
+*.jwt
+*.token
+auth-keys/
+secrets/
+*.pem
+*.key
+*.crt
+*.p12
+
+# Browser storage data (for local development)
+.browser-data/
+browser-storage/
+
+# Authentication test files (may contain sensitive data)
+auth-test-data/
+test-tokens/
+mock-auth/
+
+# Sourcemap files in production (can expose source code)
+*.map.js
+*.map.css
+
+# Bundle analyzer output
+bundle-report.html
+stats.json
+
+# Storybook build outputs (if using Storybook for component dev)
+storybook-static/
+
+# Playwright test results
+test-results/
+playwright-report/
+playwright/.cache/
