@@ -6,15 +6,15 @@ class Product(Base):
     __tablename__ = 'product'
 
     id = Column(Integer, primary_key=True, index=True)
-    product_id = Column(String(100), unique=True, index=True, nullable=False)
-    product_title = Column(String(255), nullable=False)
-    article = Column(String(255), nullable=False, index=True)
-    material = Column(String(255))
-    bulb_type = Column(String(100))
-    category = Column(String(100))
-    dimensions = Column(String(255))
-    url = Column(String())
-    store = Column(String(255))
+    product_id = Column(Text, unique=True, index=True, nullable=False)  # Changed from String(100) to Text
+    product_title = Column(Text, nullable=False)  # Changed from String(255) to Text
+    article = Column(Text, nullable=False, index=True)  # Changed from String(255) to Text
+    material = Column(Text)  # Changed from String(255) to Text
+    bulb_type = Column(Text)  # Changed from String(100) to Text
+    category = Column(Text)  # Changed from String(100) to Text
+    dimensions = Column(Text)  # Changed from String(255) to Text
+    url = Column(Text)  # Changed from String() to Text for consistency
+    store = Column(Text)  # Changed from String(255) to Text
 
     images = relationship("ProductImages", back_populates="product", cascade="all, delete-orphan")
 

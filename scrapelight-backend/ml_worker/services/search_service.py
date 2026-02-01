@@ -83,7 +83,7 @@ class SearchService:
             self._load_feature_cache()
 
             if self._normalized_feature_matrix is None or self._normalized_feature_matrix.size == 0:
-                logger.error("No features found in database. Run fix_database.py first.")
+                logger.error("No features found in database. Perform backup actions: migrate if needed else update db")
                 return []
 
             # Normalize query once
