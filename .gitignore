@@ -12,6 +12,7 @@ docker-compose.override.yml
 docker-compose.prod.yml
 docker-compose.staging.yml
 docker-compose.dev.yml
+docker-compose.dev.local.yml
 
 # JWT secrets and authentication keys
 JWT_SECRET_KEY
